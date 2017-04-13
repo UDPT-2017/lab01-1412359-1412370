@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Team GG</title>
+    <!--Các thủ tục bootstrap-->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/jquery.min.js" charset="utf-8"></script>
+    <script src="js/bootstrap.js" charset="utf-8"></script>
+    <!--chỉnh nền của các thẻ tag-->
+    <style>
+      body{
+        background-image: url("image/blackwall.jpg");
+      }
+      h1{
+        font-family: "Magneto";
+        font-size: "23";
+        color: #b30000;
+      }
+      h2{
+        background-image: url("image/paper2.jpg");
+        text-align: center;
+        text-shadow: 2px 1px grey;
+      }
+      p{
+        background-image: url("image/paper2.jpg");
+        font-size: 18px;
+        text-align: justify;
+        text-indent: 20px;
+        margin: 0 0 0 0;
+      }
+      footer{
+        background-color: #001a66;
+        text-align: center;
+        color: white;
+      }
+    </style>
+
+    <!--logotab của web-->
+    <link rel="icon" href="image/logotab.png">
+  </head>
+  <header>
+      <!--navigation bar-->
+      <nav class="nav navbar-inverse">
+        <div class="">
+          <button type="button"
+            class="navbar-toggle collapsed"
+            data-target="#main-nav"
+            data-toggle="collapse"
+            aria-expanded="false"
+            name="button">
+              <span class="sr-only"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+          </button>
+        </div>
+      <div class="collapse navbar-collapse" id="main-nav">
+        <div class="container">
+          <div class="navbar-header">
+              <a class="navbar-brand" href="index.html"><a href="index.html"><img src="image/logo.png" alt="logo" /></a></a>
+          </div>
+          <ul class="nav navbar-nav">
+           <li class=""><a href="index.html"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+           <li class="dropdown active">
+            <a href="albums.html" class="dropdown-toggle disabled" data-toggle="dropdown"><span class="glyphicon glyphicon-picture"></span> Albums<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="dogphoto.html">Dog</a></li>
+              <li class="active"><a href="catphoto.html">Cat</a></li>
+              <li><a href="hamsterphoto.html">Hamster</a></li>
+            </ul>
+          </li>
+           <li class=""><a href="blog.html"><span class="glyphicon glyphicon-list-alt"></span> Blog</a></li>
+           <li class=""><a href="about.html"><span class="glyphicon glyphicon-info-sign"></span> About</a></li>
+          </ul>
+          <!--Làm khung search-->
+          <form class="navbar-form navbar-left">
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="Search">
+              <div class="input-group-btn">
+                <button class="btn btn-default" type="submit">
+                  <i class="glyphicon glyphicon-search"></i>
+                </button>
+              </div>
+          </div>
+          </form>
+          <!--mục Sign Up và Log in canh phải-->
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+          </ul>
+        </div>
+      </div>
+      </nav>
+  </header>
+
+  <div id="wrapper">
+        <div class="overlay"></div>
+        <!-- Sidebar -->
+        <nav class="navbar navbar-inverse navbar-fixed-top" id="sidebar-wrapper" role="navigation">
+            <ul class="nav sidebar-nav">
+                <li class="sidebar-brand">
+                    <a href="index.html">
+                       GGTeam
+                    </a>
+                </li>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="#">About</a>
+                </li>
+                <li>
+                    <a href="#">Events</a>
+                </li>
+                <li>
+                    <a href="#">Team</a>
+                </li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Works <span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li class="dropdown-header">Dropdown heading</li>
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
+                    <li><a href="#">Separated link</a></li>
+                    <li><a href="#">One more separated link</a></li>
+                  </ul>
+                </li>
+                <li>
+                    <a href="#">Services</a>
+                </li>
+                <li>
+                    <a href="#">Contact</a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/cao.nguyen.3950178">Follow me</a>
+                </li>
+            </ul>
+        </nav>
+        <!-- /#sidebar-wrapper -->
+        <body>
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <button type="button" class="hamburger is-closed" data-toggle="offcanvas">
+                <span class="hamb-top"></span>
+	              <span class="hamb-middle"></span>
+                <span class="hamb-bottom"></span>
+            </button>
+            <!--Mục content albums-->
+            <div class="container">
+              <div class="page-header">
+                <button><a href="albums.html">Về Trang Album</a></button>
+                <h1>Cat Photos</h1>
+              </div>
+
+              <div class="row">
+                <div class="col-md-3 col-xs-6">
+                  <div class="thumbnail">
+                    <a href="image/cat1.jpg">
+                      <span class="glyphicon glyphicon-user" aria-hidden="true">Nhan</span>
+                      <span class="glyphicon glyphicon-eye-open" aria-hidden="true" style="float:right"><span id="displayCountcat1">0</span></span>
+                      <img src="image/cat1.jpg" alt="Cat1" style="width:100%" id="countButtoncat1" />
+                      <script type="text/javascript">
+                        var countcat1 = 0;
+                        var imagecat1 = document.getElementById("countButtoncat1");
+                        var displaycat1 = document.getElementById("displayCountcat1");
+                        if(window.localStorage.getItem('countcat1')){
+                            var savedcount = window.localStorage.getItem('countcat1');
+                            countcat1 = window.localStorage.getItem('countcat1');
+                        }else{
+                            countcat1 = 0;
+                        }
+                        displaycat1.innerHTML = countcat1;
+                        imagecat1.onclick = function(){
+                                counttotalcat();
+                                countcat1++;
+                                window.localStorage.setItem('countcat1', countcat1);
+                                displaycat1.innerHTML = countcat1;
+                                return true;
+                        }
+                      </script>
+                      <div class="caption">
+                        Janna
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-md-3 col-xs-6">
+                  <div class="thumbnail">
+                    <a href="image/cat2.jpg">
+                      <span class="glyphicon glyphicon-user" aria-hidden="true">Nhan</span>
+                      <span class="glyphicon glyphicon-eye-open" aria-hidden="true" style="float:right"><span id="displayCountcat2">0</span></span>
+                      <img src="image/cat2.jpg" alt="Cat2" style="width:100%" id="countButtoncat2" />
+                      <script type="text/javascript">
+                        var countcat2 = 0;
+                        var imagecat2 = document.getElementById("countButtoncat2");
+                        var displaycat2 = document.getElementById("displayCountcat2");
+                        if(window.localStorage.getItem('countcat2')){
+                            var savedcount = window.localStorage.getItem('countcat2');
+                            countcat2 = window.localStorage.getItem('countcat2');
+                        }else{
+                            countcat2 = 0;
+                        }
+                        displaycat2.innerHTML = countcat2;
+                        imagecat2.onclick = function(){
+                                counttotalcat();
+                                countcat2++;
+                                window.localStorage.setItem('countcat2', countcat2);
+                                displaycat2.innerHTML = countcat2;
+                                return true;
+                        }
+                      </script>
+                      <div class="caption">
+                        Nami
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-md-3 col-xs-6">
+                  <div class="thumbnail">
+                    <a href="image/cat3.jpg">
+                      <span class="glyphicon glyphicon-user" aria-hidden="true">Nhan</span>
+                      <span class="glyphicon glyphicon-eye-open" aria-hidden="true" style="float:right"><span id="displayCountcat3">0</span></span>
+                      <img src="image/cat3.jpg" alt="Cat3" style="width:100%" id="countButtoncat3" />
+                      <script type="text/javascript">
+                        var countcat3 = 0;
+                        var imagecat3 = document.getElementById("countButtoncat3");
+                        var displaycat3 = document.getElementById("displayCountcat3");
+                        if(window.localStorage.getItem('countcat3')){
+                            var savedcount = window.localStorage.getItem('countcat3');
+                            countcat3 = window.localStorage.getItem('countcat3');
+                        }else{
+                            countcat3 = 0;
+                        }
+                        displaycat3.innerHTML = countcat3;
+                        imagecat3.onclick = function(){
+                                counttotalcat();
+                                countcat3++;
+                                window.localStorage.setItem('countcat3', countcat3);
+                                displaycat3.innerHTML = countcat3;
+                                return true;
+                        }
+                      </script>
+                      <div class="caption">
+                        Bard
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-md-3 col-xs-6">
+                  <div class="thumbnail">
+                    <a href="image/cat4.jpg">
+                      <span class="glyphicon glyphicon-user" aria-hidden="true">Nhan</span>
+                      <span class="glyphicon glyphicon-eye-open" aria-hidden="true" style="float:right"><span id="displayCountcat4">0</span></span>
+                      <img src="image/cat4.jpg" alt="Cat4" style="width:100%" id="countButtoncat4" />
+                      <script type="text/javascript">
+                        var countcat4 = 0;
+                        var imagecat4 = document.getElementById("countButtoncat4");
+                        var displaycat4 = document.getElementById("displayCountcat4");
+                        if(window.localStorage.getItem('countcat4')){
+                            var savedcount = window.localStorage.getItem('countcat4');
+                            countcat4 = window.localStorage.getItem('countcat4');
+                        }else{
+                            countcat4 = 0;
+                        }
+                        displaycat4.innerHTML = countcat4;
+                        imagecat4.onclick = function(){
+                                counttotalcat();
+                                countcat4++;
+                                window.localStorage.setItem('countcat4', countcat4);
+                                displaycat4.innerHTML = countcat4;
+                                return true;
+                        }
+                      </script>
+                      <div class="caption">
+                        Aatrox
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-3 col-xs-6">
+                  <div class="thumbnail">
+                    <a href="image/cat5.jpg">
+                      <span class="glyphicon glyphicon-user" aria-hidden="true">Nhan</span>
+                      <span class="glyphicon glyphicon-eye-open" aria-hidden="true" style="float:right"><span id="displayCountcat5">0</span></span>
+                      <img src="image/cat5.jpg" alt="Cat5" style="width:100%" id="countButtoncat5" />
+                      <script type="text/javascript">
+                        var countcat5 = 0;
+                        var imagecat5 = document.getElementById("countButtoncat5");
+                        var displaycat5 = document.getElementById("displayCountcat5");
+                        if(window.localStorage.getItem('countcat5')){
+                            var savedcount = window.localStorage.getItem('countcat5');
+                            countcat5 = window.localStorage.getItem('countcat5');
+                        }else{
+                            countcat5 = 0;
+                        }
+                        displaycat5.innerHTML = countcat5;
+                        imagecat5.onclick = function(){
+                                counttotalcat();
+                                countcat5++;
+                                window.localStorage.setItem('countcat5', countcat5);
+                                displaycat5.innerHTML = countcat5;
+                                return true;
+                        }
+                      </script>
+                      <div class="caption">
+                        Ahri
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-md-3 col-xs-6">
+                  <div class="thumbnail">
+                    <a href="image/cat6.jpeg">
+                      <span class="glyphicon glyphicon-user" aria-hidden="true">Nhan</span>
+                      <span class="glyphicon glyphicon-eye-open" aria-hidden="true" style="float:right"><span id="displayCountcat6">0</span></span>
+                      <img src="image/cat6.jpeg" alt="Cat6" style="width:100%" id="countButtoncat6" />
+                      <script type="text/javascript">
+                        var countcat6 = 0;
+                        var imagecat6 = document.getElementById("countButtoncat6");
+                        var displaycat6 = document.getElementById("displayCountcat6");
+                        if(window.localStorage.getItem('countcat6')){
+                            var savedcount = window.localStorage.getItem('countcat6');
+                            countcat6 = window.localStorage.getItem('countcat6');
+                        }else{
+                            countcat6 = 0;
+                        }
+                        displaycat6.innerHTML = countcat6;
+                        imagecat6.onclick = function(){
+                                counttotalcat();
+                                countcat6++;
+                                window.localStorage.setItem('countcat6', countcat6);
+                                displaycat6.innerHTML = countcat6;
+                                return true;
+                        }
+                      </script>
+                      <div class="caption">
+                        Rengar
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+      </body>
+        <!-- /#page-content-wrapper -->
+    </div>
+    <!-- /#wrapper -->
+    <!--Về đầu trang-->
+    <a id="back-to-top" href="#" class="btn btn-primary btn-lg back-to-top" role="button" title="Về đầu trang" data-toggle="tooltip" data-placement="left"><span class="glyphicon glyphicon-chevron-up"></span></a>
+    <footer>
+      Created by: GG Team ©<br>
+      Contact information: <a href="mailto:ggteamhcmus@gmail.com">ggteamhcmus@gmail.com</a>.
+    </footer>
+</html>

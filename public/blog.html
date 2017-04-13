@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Team GG</title>
+    <!--Các thủ tục bootstrap-->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/jquery.min.js" charset="utf-8"></script>
+    <script src="js/bootstrap.js" charset="utf-8"></script>
+    <!--chỉnh nền của các thẻ tag-->
+    <style>
+      body{
+        background-image: url("image/blackwall.jpg");
+      }
+      h1{
+        font-family: "Magneto";
+        font-size: "23";
+        color: #b30000;
+      }
+      h2{
+        background-image: url("image/paper2.jpg");
+        text-align: center;
+        text-shadow: 2px 1px grey;
+        margin: 0 0 0 0;
+      }
+      h4{
+        background-image: url("image/paper2.jpg");
+        margin: 0 0 0 0;
+      }
+      h5{
+        background-image: url("image/paper2.jpg");
+        margin: 0 0 0 0;
+      }
+      p{
+        background-image: url("image/paper2.jpg");
+        font-size: 18px;
+        text-align: justify;
+        text-indent: 20px;
+        margin: 0 0 0 0;
+      }
+      footer{
+        background-color: #001a66;
+        text-align: center;
+        color: white;
+      }
+      .btn-blog {
+        color: #ffffff;
+        background-color: #37d980;
+        border-color: #37d980;
+        border-radius:0;
+        margin-bottom:10px
+      }
+    </style>
+
+    <!--logotab của web-->
+    <link rel="icon" href="image/logotab.png">
+  </head>
+  <header>
+      <!--navigation bar-->
+      <nav class="nav navbar-inverse">
+        <div class="">
+          <button type="button"
+            class="navbar-toggle collapsed"
+            data-target="#main-nav"
+            data-toggle="collapse"
+            aria-expanded="false"
+            name="button">
+              <span class="sr-only"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+          </button>
+        </div>
+      <div class="collapse navbar-collapse" id="main-nav">
+        <div class="container">
+          <div class="navbar-header">
+              <a class="navbar-brand" href="index.html"><a href="index.html"><img src="image/logo.png" alt="logo" /></a></a>
+          </div>
+          <ul class="nav navbar-nav">
+           <li class=""><a href="index.html"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+           <li class="dropdown">
+            <a href="albums.html" class="dropdown-toggle disabled" data-toggle="dropdown"><span class="glyphicon glyphicon-picture"></span> Albums<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="dogphoto.html">Dog</a></li>
+              <li><a href="catphoto.html">Cat</a></li>
+              <li><a href="hamsterphoto.html">Hamster</a></li>
+            </ul>
+          </li>
+           <li class="active"><a href="blog.html"><span class="glyphicon glyphicon-list-alt"></span> Blog</a></li>
+           <li class=""><a href="about.html"><span class="glyphicon glyphicon-info-sign"></span> About</a></li>
+          </ul>
+          <!--Làm khung search-->
+          <form class="navbar-form navbar-left">
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="Search">
+              <div class="input-group-btn">
+                <button class="btn btn-default" type="submit">
+                  <i class="glyphicon glyphicon-search"></i>
+                </button>
+              </div>
+            </div>
+          </form>
+          <!--mục Sign Up và Log in canh phải-->
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+          </ul>
+        </div>
+      </div>
+      </nav>
+  </header>
+
+  <div id="wrapper">
+        <div class="overlay"></div>
+        <!-- Sidebar -->
+        <nav class="navbar navbar-inverse navbar-fixed-top" id="sidebar-wrapper" role="navigation">
+            <ul class="nav sidebar-nav">
+                <li class="sidebar-brand">
+                    <a href="index.html">
+                       GGTeam
+                    </a>
+                </li>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="#">About</a>
+                </li>
+                <li>
+                    <a href="#">Events</a>
+                </li>
+                <li>
+                    <a href="#">Team</a>
+                </li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Works <span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li class="dropdown-header">Dropdown heading</li>
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
+                    <li><a href="#">Separated link</a></li>
+                    <li><a href="#">One more separated link</a></li>
+                  </ul>
+                </li>
+                <li>
+                    <a href="#">Services</a>
+                </li>
+                <li>
+                    <a href="#">Contact</a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/cao.nguyen.3950178">Follow me</a>
+                </li>
+            </ul>
+        </nav>
+        <!-- /#sidebar-wrapper -->
+        <body>
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <button type="button" class="hamburger is-closed" data-toggle="offcanvas">
+                <span class="hamb-top"></span>
+	              <span class="hamb-middle"></span>
+                <span class="hamb-bottom"></span>
+            </button>
+            <!--Mục content albums-->
+            <div class="container">
+              <div class="page-header">
+                <h1>Blog</h1>
+              </div>
+              <!--Phần Blog Content-->
+              <div class="row content">
+
+
+                <div class="col-sm-12">
+
+                  <!--Khung blog1-->
+                  <hr>
+                  <h2>I Love Food</h2>
+                  <h5><span class="glyphicon glyphicon-time"></span> Post by Nguyen, Sep 27, 2015.<span class="glyphicon glyphicon-eye-open" aria-hidden="true" style="float:right; margin-right:5px"><span id="displayCountblog1">0</span></span></h5>
+                  <h5><span class="label label-danger">Food </span> <span class="label label-primary">Ipsum</span></h5>
+                  <img src="image/food.jpg" alt="post img" class="pull-left img-responsive thumb margin10 img-thumbnail">
+                  <article><p>Food is my passion. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p></article>
+
+
+                  <a class="btn btn-blog pull-right marginBottom10" href="blog1.html" id="countButtonblog1">READ MORE</a>
+                  <!--Đoạn script ghi nhận số lần view = số lần click button READ MORE-->
+                  <script type="text/javascript">
+                  var countblog1 = 0;
+                  var buttonblog1 = document.getElementById("countButtonblog1");
+                  var displayblog1 = document.getElementById("displayCountblog1");
+                  if(window.localStorage.getItem('countblog1')){
+                      var savedcount = window.localStorage.getItem('countblog1');
+                      countblog1 = window.localStorage.getItem('countblog1');
+                  }else{
+                      countblog1 = 0;
+                  }
+                  displayblog1.innerHTML = countblog1;
+                  buttonblog1.onclick = function(){
+                          countblog1++;
+                          window.localStorage.setItem('countblog1', countblog1);
+                          displayblog1.innerHTML = countblog1;
+                          return true;
+                  }
+                  </script>
+                  <br><br>
+
+                  <!--Khung blog2-->
+                  <hr>
+                  <h2>Officially Blogging</h2>
+                  <h5><span class="glyphicon glyphicon-time"></span> Post by Nguyen, Sep 24, 2015.<span class="glyphicon glyphicon-eye-open" aria-hidden="true" style="float:right; margin-right:5px"><span id="displayCountblog2">0</span></span></h5>
+                  <h5><span class="label label-success">Lorem</span></h5>
+                  <img src="image/blog.jpg" alt="post img" class="pull-left img-responsive thumb margin10 img-thumbnail">
+                  <article><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p></article>
+                  <a class="btn btn-blog pull-right marginBottom10" href="blog2.html" id="countButtonblog2">READ MORE</a>
+                  <script type="text/javascript">
+                  var countblog2 = 0;
+                  var buttonblog2 = document.getElementById("countButtonblog2");
+                  var displayblog2 = document.getElementById("displayCountblog2");
+                  if(window.localStorage.getItem('countblog2')){
+                      var savedcount = window.localStorage.getItem('countblog2');
+                      countblog2 = window.localStorage.getItem('countblog2');
+                  }else{
+                      countblog2 = 0;
+                  }
+                  displayblog2.innerHTML = countblog2;
+                  buttonblog2.onclick = function(){
+                          countblog2++;
+                          window.localStorage.setItem('countblog2', countblog2);
+                          displayblog2.innerHTML = countblog2;
+                          return true;
+                  }
+                  </script>
+                  <br><br><hr>
+
+                  <!--Phần comment-->
+                  <h4>Leave a Comment:</h4>
+                  <form role="form">
+                    <div class="form-group">
+                      <textarea class="form-control" rows="3" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-success">Submit</button>
+                  </form>
+                  <br><br>
+
+                  <p style="border:3px ridge black;"><span class="badge">2</span> Comments:</p><br>
+
+                  <div class="row">
+                    <div class="col-sm-2 text-center">
+                      <img src="image/bandmember.png" class="img-circle" height="65" width="65" alt="Avatar">
+                    </div>
+                    <div class="col-sm-10">
+                      <h4 style="border:3px ridge black;">Anja <small>Sep 29, 2015, 9:12 PM</small></h4>
+                      <p style="border:3px ridge black;">Keep up the GREAT work! I am cheering for you!! Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                      <br>
+                    </div>
+                    <div class="col-sm-2 text-center">
+                      <img src="image/bird.jpg" class="img-circle" height="65" width="65" alt="Avatar">
+                    </div>
+                    <div class="col-sm-10">
+                      <h4 style="border:3px ridge black;">John Row <small>Sep 25, 2015, 8:25 PM</small></h4>
+                      <p style="border:3px ridge black;">I am so happy for you man! Finally. I am looking forward to read about your trendy life. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                      <br>
+                      <p style="border:3px ridge black;"><span class="badge">1</span> Comment:</p><br>
+                      <div class="row">
+                        <div class="col-sm-2 text-center">
+                          <img src="image/bird.jpg" class="img-circle" height="65" width="65" alt="Avatar">
+                        </div>
+                        <div class="col-xs-10">
+                          <h4 style="border:3px ridge black;">Nested Bro <small>Sep 25, 2015, 8:28 PM</small></h4>
+                          <p style="border:3px ridge black;">Me too! WOW!</p>
+                          <br>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+      </body>
+        <!-- /#page-content-wrapper -->
+    </div>
+    <!-- /#wrapper -->
+    <!--Về đầu trang-->
+    <a id="back-to-top" href="#" class="btn btn-primary btn-lg back-to-top" role="button" title="Về đầu trang" data-toggle="tooltip" data-placement="left"><span class="glyphicon glyphicon-chevron-up"></span></a>
+    <footer>
+      Created by: GG Team ©<br>
+      Contact information: <a href="mailto:ggteamhcmus@gmail.com">ggteamhcmus@gmail.com</a>.
+    </footer>
+</html>

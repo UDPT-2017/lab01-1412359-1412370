@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Team GG</title>
+    <!--Các thủ tục bootstrap-->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/jquery.min.js" charset="utf-8"></script>
+    <script src="js/bootstrap.js" charset="utf-8"></script>
+    <!--chỉnh nền của các thẻ tag-->
+    <style>
+      body{
+        background-image: url("image/blackwall.jpg");
+      }
+      h1{
+        font-family: "Magneto";
+        font-size: "23";
+        color: #b30000;
+      }
+      h2{
+        background-image: url("image/paper2.jpg");
+        text-align: center;
+        text-shadow: 2px 1px grey;
+      }
+      p{
+        background-image: url("image/paper2.jpg");
+        font-size: 18px;
+        text-align: justify;
+        text-indent: 20px;
+        margin: 0 0 0 0;
+      }
+      footer{
+        background-color: #001a66;
+        text-align: center;
+        color: white;
+      }
+    </style>
+
+    <!--logotab của web-->
+    <link rel="icon" href="image/logotab.png">
+  </head>
+  <header>
+      <!--navigation bar-->
+      <nav class="nav navbar-inverse">
+        <div class="">
+          <button type="button"
+            class="navbar-toggle collapsed"
+            data-target="#main-nav"
+            data-toggle="collapse"
+            aria-expanded="false"
+            name="button">
+              <span class="sr-only"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+          </button>
+        </div>
+      <div class="collapse navbar-collapse" id="main-nav">
+        <div class="container">
+          <div class="navbar-header">
+              <a class="navbar-brand" href="index.html"><a href="index.html"><img src="image/logo.png" alt="logo" /></a></a>
+          </div>
+          <ul class="nav navbar-nav">
+           <li class=""><a href="index.html"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+           <li class="dropdown active">
+            <a href="albums.html" class="dropdown-toggle disabled" data-toggle="dropdown"><span class="glyphicon glyphicon-picture"></span> Albums<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li class="active"><a href="dogphoto.html">Dog</a></li>
+              <li><a href="catphoto.html">Cat</a></li>
+              <li><a href="hamsterphoto.html">Hamster</a></li>
+            </ul>
+          </li>
+           <li class=""><a href="blog.html"><span class="glyphicon glyphicon-list-alt"></span> Blog</a></li>
+           <li class=""><a href="about.html"><span class="glyphicon glyphicon-info-sign"></span> About</a></li>
+          </ul>
+          <!--Làm khung search-->
+          <form class="navbar-form navbar-left">
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="Search">
+              <div class="input-group-btn">
+                <button class="btn btn-default" type="submit">
+                  <i class="glyphicon glyphicon-search"></i>
+                </button>
+              </div>
+            </div>
+          </form>
+          <!--mục Sign Up và Log in canh phải-->
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+          </ul>
+        </div>
+      </div>
+      </nav>
+  </header>
+
+  <div id="wrapper">
+        <div class="overlay"></div>
+        <!-- Sidebar -->
+        <nav class="navbar navbar-inverse navbar-fixed-top" id="sidebar-wrapper" role="navigation">
+            <ul class="nav sidebar-nav">
+                <li class="sidebar-brand">
+                    <a href="index.html">
+                       GGTeam
+                    </a>
+                </li>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="#">About</a>
+                </li>
+                <li>
+                    <a href="#">Events</a>
+                </li>
+                <li>
+                    <a href="#">Team</a>
+                </li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Works <span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li class="dropdown-header">Dropdown heading</li>
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
+                    <li><a href="#">Separated link</a></li>
+                    <li><a href="#">One more separated link</a></li>
+                  </ul>
+                </li>
+                <li>
+                    <a href="#">Services</a>
+                </li>
+                <li>
+                    <a href="#">Contact</a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/cao.nguyen.3950178">Follow me</a>
+                </li>
+            </ul>
+        </nav>
+        <!-- /#sidebar-wrapper -->
+        <body>
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <button type="button" class="hamburger is-closed" data-toggle="offcanvas">
+                <span class="hamb-top"></span>
+	              <span class="hamb-middle"></span>
+                <span class="hamb-bottom"></span>
+            </button>
+            <!--Mục content albums-->
+            <div class="container">
+              <div class="page-header">
+                <button><a href="albums.html">Về Trang Album</a></button>
+                <h1>Dog Photos</h1>
+              </div>
+              <!--Mục Carousel-->
+              <div class="container">
+                <br>
+                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                  <!-- Indicators -->
+                  <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                    <li data-target="#myCarousel" data-slide-to="3"></li>
+                  </ol>
+
+                  <!-- Wrapper for slides -->
+                  <div class="carousel-inner" role="listbox">
+
+                    <div class="item active">
+                      <img src="image/dog1.jpg" alt="Chania" width="100%" height="100%" style="margin:20">
+                      <div class="carousel-caption">
+                        <h3>Chania</h3>
+                        <p>The atmosphere in Chania has a touch of Florence and Venice.</p>
+                      </div>
+                    </div>
+
+                    <div class="item">
+                      <img src="image/dog2.jpg" alt="Chania" width="100%" height="100%" style="margin:20px">
+                      <div class="carousel-caption">
+                        <h3>Chania</h3>
+                        <p>The atmosphere in Chania has a touch of Florence and Venice.</p>
+                      </div>
+                    </div>
+
+                    <div class="item">
+                      <img src="image/dog3.jpg" alt="Flower" width="100%" height="100%" style="margin:20px">
+                      <div class="carousel-caption">
+                        <h3>Flowers</h3>
+                        <p>Beatiful flowers in Kolymbari, Crete.</p>
+                      </div>
+                    </div>
+
+                    <div class="item">
+                      <img src="image/dog4.jpg" alt="Flower" width="100%" height="100%" style="margin:20px">
+                      <div class="carousel-caption">
+                        <h3>Flowers</h3>
+                        <p>Beatiful flowers in Kolymbari, Crete.</p>
+                      </div>
+                    </div>
+
+                  </div>
+
+                  <!-- Left and right controls -->
+                  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                  </a>
+                </div>
+              </div>
+              <!--Kết thúc mục Carousel-->
+              <!--Kho ảnh-->
+              <br><br>
+              <div class="row">
+                <div class="col-md-3 col-xs-6">
+                  <div class="thumbnail">
+                    <a href="image/dog1.jpg">
+                      <!--Thông tin người upload ảnh-->
+                      <span class="glyphicon glyphicon-user" aria-hidden="true">Nhan</span>
+                      <!--Thông tin số view của bức ảnh-->
+                      <span class="glyphicon glyphicon-eye-open" aria-hidden="true" style="float:right"><span id="displayCountdog1">0</span></span>
+                      <img src="image/dog1.jpg" alt="Dog1" style="width:100%" id="countButtondog1" />
+                      <script type="text/javascript">
+                        var countdog1 = 0;
+                        var imagedog1 = document.getElementById("countButtondog1");
+                        var displaydog1 = document.getElementById("displayCountdog1");
+                        if(window.localStorage.getItem('countdog1')){
+                            var savedcount = window.localStorage.getItem('countdog1');
+                            countdog1 = window.localStorage.getItem('countdog1');
+                        }else{
+                            countdog1 = 0;
+                        }
+                        displaydog1.innerHTML = countdog1;
+                        imagedog1.onclick = function(){
+                                counttotaldog();
+                                countdog1++;
+                                window.localStorage.setItem('countdog1', countdog1);
+                                displaydog1.innerHTML = countdog1;
+                                return true;
+                        }
+                      </script>
+                      <div class="caption">
+                        <p>Daisy</p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-md-3 col-xs-6">
+                  <div class="thumbnail">
+                    <a href="image/dog2.jpg">
+                      <span class="glyphicon glyphicon-user" aria-hidden="true">Nhan</span>
+                      <span class="glyphicon glyphicon-eye-open" aria-hidden="true" style="float:right"><span id="displayCountdog2">0</span></span>
+                      <img src="image/dog2.jpg" alt="Dog2" style="width:100%" id="countButtondog2" />
+                      <script type="text/javascript">
+                        var countdog2 = 0;
+                        var imagedog2 = document.getElementById("countButtondog2");
+                        var displaydog2 = document.getElementById("displayCountdog2");
+                        if(window.localStorage.getItem('countdog2')){
+                            var savedcount = window.localStorage.getItem('countdog2');
+                            countdog2 = window.localStorage.getItem('countdog2');
+                        }else{
+                            countdog2 = 0;
+                        }
+                        displaydog2.innerHTML = countdog2;
+                        imagedog2.onclick = function(){
+                                counttotaldog();
+                                countdog2++;
+                                window.localStorage.setItem('countdog2', countdog2);
+                                displaydog2.innerHTML = countdog2;
+                                return true;
+                        }
+                      </script>
+                      <div class="caption">
+                        <p>Lee sin</p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-md-3 col-xs-6">
+                  <div class="thumbnail">
+                    <a href="image/dog3.jpg">
+                      <span class="glyphicon glyphicon-user" aria-hidden="true">Nhan</span>
+                      <span class="glyphicon glyphicon-eye-open" aria-hidden="true" style="float:right"><span id="displayCountdog3">0</span></span>
+                      <img src="image/dog3.jpg" alt="Dog3" style="width:100%" id="countButtondog3" />
+                      <script type="text/javascript">
+                        var countdog3 = 0;
+                        var imagedog3 = document.getElementById("countButtondog3");
+                        var displaydog3 = document.getElementById("displayCountdog3");
+                        if(window.localStorage.getItem('countdog3')){
+                            var savedcount = window.localStorage.getItem('countdog3');
+                            countdog3 = window.localStorage.getItem('countdog3');
+                        }else{
+                            countdog3 = 0;
+                        }
+                        displaydog3.innerHTML = countdog3;
+                        imagedog3.onclick = function(){
+                                counttotaldog();
+                                countdog3++;
+                                window.localStorage.setItem('countdog3', countdog3);
+                                displaydog3.innerHTML = countdog3;
+                                return true;
+                        }
+                      </script>
+                      <div class="caption">
+                        <p>Soraka</p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-md-3 col-xs-6">
+                  <div class="thumbnail">
+                    <a href="image/dog4.jpg">
+                      <span class="glyphicon glyphicon-user" aria-hidden="true">Nhan</span>
+                      <span class="glyphicon glyphicon-eye-open" aria-hidden="true" style="float:right"><span id="displayCountdog4">0</span></span>
+                      <img src="image/dog4.jpg" alt="Dog4" style="width:100%" id="countButtondog4" />
+                      <script type="text/javascript">
+                        var countdog4 = 0;
+                        var imagedog4 = document.getElementById("countButtondog4");
+                        var displaydog4 = document.getElementById("displayCountdog4");
+                        if(window.localStorage.getItem('countdog4')){
+                            var savedcount = window.localStorage.getItem('countdog4');
+                            countdog4 = window.localStorage.getItem('countdog4');
+                        }else{
+                            countdog4 = 0;
+                        }
+                        displaydog4.innerHTML = countdog4;
+                        imagedog4.onclick = function(){
+                                counttotaldog();
+                                countdog4++;
+                                window.localStorage.setItem('countdog4', countdog4);
+                                displaydog4.innerHTML = countdog4;
+                                return true;
+                        }
+                      </script>
+                      <div class="caption">
+                        <p>Gragas</p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-3 col-xs-6">
+                  <div class="thumbnail">
+                    <a href="image/dog5.jpg">
+                      <span class="glyphicon glyphicon-user" aria-hidden="true">Nhan</span>
+                      <span class="glyphicon glyphicon-eye-open" aria-hidden="true" style="float:right"><span id="displayCountdog5">0</span></span>
+                      <img src="image/dog5.jpg" alt="Dog1" style="width:100%" id="countButtondog5" />
+                      <script type="text/javascript">
+                        var countdog5 = 0;
+                        var imagedog5 = document.getElementById("countButtondog5");
+                        var displaydog5 = document.getElementById("displayCountdog5");
+                        if(window.localStorage.getItem('countdog5')){
+                            var savedcount = window.localStorage.getItem('countdog5');
+                            countdog5 = window.localStorage.getItem('countdog5');
+                        }else{
+                            countdog5 = 0;
+                        }
+                        displaydog5.innerHTML = countdog5;
+                        imagedog5.onclick = function(){
+                                counttotaldog();
+                                countdog5++;
+                                window.localStorage.setItem('countdog5', countdog5);
+                                displaydog5.innerHTML = countdog5;
+                                return true;
+                        }
+                      </script>
+                      <div class="caption">
+                        <p>Ahri</p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-md-3 col-xs-6">
+                  <div class="thumbnail">
+                    <a href="image/dog6.jpg">
+                      <span class="glyphicon glyphicon-user" aria-hidden="true">Nhan</span>
+                      <span class="glyphicon glyphicon-eye-open" aria-hidden="true" style="float:right"><span id="displayCountdog6">0</span></span>
+                      <img src="image/dog6.jpg" alt="Dog6" style="width:100%" id="countButtondog6" />
+                      <script type="text/javascript">
+                        var countdog6 = 0;
+                        var imagedog6 = document.getElementById("countButtondog6");
+                        var displaydog6 = document.getElementById("displayCountdog6");
+                        if(window.localStorage.getItem('countdog6')){
+                            var savedcount = window.localStorage.getItem('countdog6');
+                            countdog6 = window.localStorage.getItem('countdog6');
+                        }else{
+                            countdog6 = 0;
+                        }
+                        displaydog6.innerHTML = countdog6;
+                        imagedog6.onclick = function(){
+                                counttotaldog();
+                                countdog6++;
+                                window.localStorage.setItem('countdog6', countdog6);
+                                displaydog6.innerHTML = countdog6;
+                                return true;
+                        }
+                      </script>
+                      <div class="caption">
+                        <p>Amumu</p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+      </body>
+        <!-- /#page-content-wrapper -->
+    </div>
+    <!-- /#wrapper -->
+    <!--Về đầu trang-->
+    <a id="back-to-top" href="#" class="btn btn-primary btn-lg back-to-top" role="button" title="Về đầu trang" data-toggle="tooltip" data-placement="left"><span class="glyphicon glyphicon-chevron-up"></span></a>
+    <footer>
+      Created by: GG Team ©<br>
+      Contact information: <a href="mailto:ggteamhcmus@gmail.com">ggteamhcmus@gmail.com</a>.
+    </footer>
+</html>
