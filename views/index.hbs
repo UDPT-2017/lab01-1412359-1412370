@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Team GG</title>
+    <title>{{tittle}}</title>
     <!--Các thủ tục bootstrap-->
     <link rel="stylesheet" href="components/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" href="css/styles.css">
@@ -60,20 +60,20 @@
       <div class="collapse navbar-collapse" id="main-nav">
         <div class="container">
           <div class="navbar-header">
-              <a class="navbar-brand" href="index.html"><a href="index.html"><img src="image/logo.png" alt="logo" /></a></a>
+              <a class="navbar-brand" href="/"><a href="/"><img src="image/logo.png" alt="logo" /></a></a>
           </div>
           <ul class="nav navbar-nav">
-           <li class="active"><a href="index.html"><span class="glyphicon glyphicon-home"></span> Home</a></li>
-           <li class="dropdown">
-            <a href="albums.html" class="dropdown-toggle disabled" data-toggle="dropdown"><span class="glyphicon glyphicon-picture"></span> Albums<span class="caret"></span></a>
-            <ul class="dropdown-menu">
-              <li><a href="dogphoto.html">Dog</a></li>
-              <li><a href="catphoto.html">Cat</a></li>
-              <li><a href="hamsterphoto.html">Hamster</a></li>
-            </ul>
-          </li>
-          <li class=""><a href="blog.html"><span class="glyphicon glyphicon-list-alt"></span> Blog</a></li>
-          <li class=""><a href="about.html"><span class="glyphicon glyphicon-info-sign"></span> About</a></li>
+            <li class="active"><a href="/"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+            <li class="dropdown">
+              <a href="/albums" class="dropdown-toggle disabled" data-toggle="dropdown"><span class="glyphicon glyphicon-picture"></span> Albums<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="/dogphoto">Dog</a></li>
+                <li><a href="/catphoto">Cat</a></li>
+                <li><a href="/hamsterphoto">Hamster</a></li>
+              </ul>
+            </li>
+            <li class=""><a href="/blog"><span class="glyphicon glyphicon-list-alt"></span> Blog</a></li>
+            <li class=""><a href="/about"><span class="glyphicon glyphicon-info-sign"></span> About</a></li>
           </ul>
           <!--Làm khung search-->
           <form class="navbar-form navbar-left">
@@ -95,36 +95,7 @@
       </div>
       </nav>
   </header>
-  <!--Phần content
-  <body>
-    <div class="container">
-      <h1>Homepage</h1>
-      <div class="row">
-        <div class="col-sm-1"></div>
-        <div class="col-md-10">
-          <h2>Suy ngẫm: <br> Bài Diễn Văn Về Chó Hay Nhất<br></h2>
 
-          <div class="document">
-            <p>Diễn văn của luật sư George Graham Vest tại phiên tòa xử vụ kiện hàng xóm làm chết con chó của thân chủ, được phóng viên William Safire báo New York Times bình chọn là hay nhất trong các bài diễn văn trên thế giới trong 1000 năm qua.</p>
-            <p>Thưa quý ngài hội thẩm,</p>
-            <p>Người bạn tốt nhất mà con người có được trên thế giới này có thể một ngày nào đó hóa ra kẻ thù chống lại chúng ta. Con cái mà ta nuôi dưỡng với tình yêu thương hết mực rồi cũng có thể sẽ là một lũ vô ơn.</p>
-            <p>Những người gần gũi, thân thiết nhất mà người ta gửi gắm hạnh phúc và danh dự có thể trở thành kẻ phản bội, phụ bạc lòng tin cậy và sự trung thành. Tiền bạc mà con người có được rồi sẽ mất đi, thậm chí còn luôn mất đi đúng vào lúc ta cần nó nhất.</p>
-            <p>Tiếng tăm của con người cũng có thể tiêu tan trong phút chốc bởi một hành động dại dột. Những kẻ phủ phục tôn vinh ta khi ta thành đạt, có thể sẽ là những kẻ ném đá vào ta khi ta sa cơ lỡ vận. Duy có một người bạn không vụ lợi mà con người có thể có trong thế giới ích kỷ này, người bạn không bao giờ bỏ rơi ta, không bao giờ vô ơn hay tráo trở, đó là chú chó của ta.</p>
-            <p>Nó luôn ở bên cạnh ta trong những lúc phú quý cũng như bần hàn, khi khỏe mạnh cũng như lúc đau ốm. Nó ngủ yên trên nền đất lạnh dù gió đông giá rét hay bão tuyết vùi lấp, miễn sao được cận kề bên chủ. Nó hôn bàn tay ta dù khi ta không còn thức ăn cho nó.</p>
-            <p>Nó liếm vết thương của ta và những vết trầy xước mà ta phải hứng chịu khi va chạm với cuộc đời bạo tàn này. Nó canh giấc ngủ của ta như thể ta là một ông hoàng, dù ta có là một gã ăn mày. Dù khi ta đã tán gia bại sản, thân tàn danh liệt thì vẫn còn chú chó trung thành với tình yêu nó dành cho ta như thái dương trên bầu trời. Nếu chẳng may số phận hắt ta ngoài rìa xã hội, không bạn bè, không nơi ở thì chú chó trunng thành chỉ xin ta một ân huệ là cho nó được đồng hành, cho nó được bảo vệ ta trước nguy hiểm, giúp ta chống lại kẻ thù...</p>
-            <p>Và khi trò đời hạ màn, thần chết đến rước phần hồn ta đi, để lại thân xác ta trong lòng đất lạnh, thì khi ấy, lúc tất cả thân bằng gia quyến đã phủi tay sau nắm đất cuối cùng và quay đi để sống tiếp cuộc đời của họ, vẫn còn bên nấm mồ của ta - chú chó cao thượng nằm gục mõm giữa hai chân trước, đôi mắt ướt buồn vẫn mở to cảnh giác, trung thành và trung thực ngay cả khi ta đã đi vào cõi hư vô!</p>
-            <p>***</p>
-            <p>P/S: Từ nhỏ tôi đã rất yêu chó, hồi bé khi bố mẹ đi làm, tôi ở nhà chơi với hai chú chó ta là Robin và Queen... Đùa nghịch vật nhau với chúng rồi khi chúng bị bắt đi, tôi đã khóc hết mấy ngày...</p>
-            <p>Từ nhỏ đến lớn tôi nuôi rất nhiều chó nhưng vì nhiều lý do phải cho đi hết... Đến giờ chỉ giữ lại một chú chó berger tên là Kid. Nhiều khi có chuyện buồn tôi lại ngồi chơi với nó, đùa nghịch với nó một lúc là nỗi buồn lại bay đi đâu mất. Bài học lớn nhất mà tôi học được từ việc nuôi chó chính là lòng kiên nhẫn. Muốn có được tình cảm và lòng trung thành của chú chó mình nuôi thì phải biết đối xử công bằng với nó, ngoan thì thưởng hư phải phạt.</p>
-            <p>Bạn cần xây dựng một mối quan hệ với chó cưng mà thể hiện được sự tôn trọng lẫn nhau. Tình yêu thương thì tự nó đã có, nhưng sự tôn trọng của bạn dành cho con chó, mà nhất là sự tôn trọng của con chó đối với bạn chỉ có thể đạt được thông qua nhiều thời gian, nhiều công sức làm việc vất vả.</p>
-            <p>Con chó có thể rất yêu quý bạn, nhưng nó vẫn có thể lờ đi không nghe mệnh lệnh của bạn. Đó chính là vì nó chưa tôn trọng bạn đúng mức. Phải tạo cho nó có một niềm tin vào người chủ: công bằng, yêu thương, có nguyên tắc. Khi đó nó sẽ tôn trọng bạn. Đã đạt được sự tôn trọng và tin cậy đó rồi thì bạn có thể dạy nó hầu hết những gì bạn muốn nó làm.</p>
-            <p>Đó cũng là cách sống ở xã hội muốn thành công bạn cần phải biết chịu khó và kiên nhẫn, luôn sống đúng mực, công bằng và tôn trọng mọi người...</p>
-          </div>
-        </div>
-        <div class="col-sm-1"></div>
-    </div>
-  </body>
-  -->
   <div id="wrapper">
         <div class="overlay"></div>
         <!-- Sidebar -->
@@ -183,18 +154,12 @@
                   <div class="col-sm-1"></div>
                   <div class="col-md-10">
                   <div class="page-header">
-                    <button onclick="goBack()">Về Trang Blog</button>
-                    <script>
-                      function goBack() {
-                          window.history.back();
-                      }
-                    </script>
-                    <h1>Blog 1</h1>
+                    <h1>{{message}}</h1>
+                    <marquee style="color:#b3ecff; font-size:200%">~Hello Guest~</marquee>
                   </div>
-                    <h2>I Love Food<br></h2>
-                    <img src="image/foodfull.jpg" alt="Cat5" style="width:100%" >
+                    <h2>Suy ngẫm: <br> Bài Diễn Văn Về Chó Hay Nhất<br></h2>
+
                     <div class="document">
-                      <p>Blog 1 bla bla bla</p>
                       <p>Diễn văn của luật sư George Graham Vest tại phiên tòa xử vụ kiện hàng xóm làm chết con chó của thân chủ, được phóng viên William Safire báo New York Times bình chọn là hay nhất trong các bài diễn văn trên thế giới trong 1000 năm qua.</p>
                       <p>Thưa quý ngài hội thẩm,</p>
                       <p>Người bạn tốt nhất mà con người có được trên thế giới này có thể một ngày nào đó hóa ra kẻ thù chống lại chúng ta. Con cái mà ta nuôi dưỡng với tình yêu thương hết mực rồi cũng có thể sẽ là một lũ vô ơn.</p>
@@ -219,6 +184,9 @@
         <!-- /#page-content-wrapper -->
     </div>
     <!-- /#wrapper -->
+    <audio controls autoplay loop hidden>
+      <source src="music/1.mp3" type="audio/mpeg">
+    </audio>
     <!--Về đầu trang-->
     <a id="back-to-top" href="#" class="btn btn-primary btn-lg back-to-top" role="button" title="Về đầu trang" data-toggle="tooltip" data-placement="left"><span class="glyphicon glyphicon-chevron-up"></span></a>
     <footer>

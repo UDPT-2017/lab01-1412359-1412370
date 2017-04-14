@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Team GG</title>
+    <title>{{tittle}}</title>
     <!--Các thủ tục bootstrap-->
     <link rel="stylesheet" href="components/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" href="css/styles.css">
@@ -76,20 +76,20 @@
       <div class="collapse navbar-collapse" id="main-nav">
         <div class="container">
           <div class="navbar-header">
-              <a class="navbar-brand" href="index.html"><a href="index.html"><img src="image/logo.png" alt="logo" /></a></a>
+              <a class="navbar-brand" href="/"><a href="/"><img src="image/logo.png" alt="logo" /></a></a>
           </div>
           <ul class="nav navbar-nav">
-           <li class=""><a href="index.html"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+           <li class=""><a href="/"><span class="glyphicon glyphicon-home"></span> Home</a></li>
            <li class="dropdown">
-            <a href="albums.html" class="dropdown-toggle disabled" data-toggle="dropdown"><span class="glyphicon glyphicon-picture"></span> Albums<span class="caret"></span></a>
+            <a href="/albums" class="dropdown-toggle disabled" data-toggle="dropdown"><span class="glyphicon glyphicon-picture"></span> Albums<span class="caret"></span></a>
             <ul class="dropdown-menu">
-              <li><a href="dogphoto.html">Dog</a></li>
-              <li><a href="catphoto.html">Cat</a></li>
-              <li><a href="hamsterphoto.html">Hamster</a></li>
+              <li><a href="/dogphoto">Dog</a></li>
+              <li><a href="/catphoto">Cat</a></li>
+              <li><a href="/hamsterphoto">Hamster</a></li>
             </ul>
           </li>
-           <li class="active"><a href="blog.html"><span class="glyphicon glyphicon-list-alt"></span> Blog</a></li>
-           <li class=""><a href="about.html"><span class="glyphicon glyphicon-info-sign"></span> About</a></li>
+           <li class="active"><a href="/blog"><span class="glyphicon glyphicon-list-alt"></span> Blog</a></li>
+           <li class=""><a href="/about"><span class="glyphicon glyphicon-info-sign"></span> About</a></li>
           </ul>
           <!--Làm khung search-->
           <form class="navbar-form navbar-left">
@@ -168,7 +168,7 @@
             <!--Mục content albums-->
             <div class="container">
               <div class="page-header">
-                <h1>Blog</h1>
+                <h1>{{message}}</h1>
               </div>
               <!--Phần Blog Content-->
               <div class="row content">
@@ -185,7 +185,7 @@
                   <article><p>Food is my passion. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p></article>
 
 
-                  <a class="btn btn-blog pull-right marginBottom10" href="blog1.html" id="countButtonblog1">READ MORE</a>
+                  <a class="btn btn-blog pull-right marginBottom10" href="/blog1" id="countButtonblog1">READ MORE</a>
                   <!--Đoạn script ghi nhận số lần view = số lần click button READ MORE-->
                   <script type="text/javascript">
                   var countblog1 = 0;
@@ -214,7 +214,7 @@
                   <h5><span class="label label-success">Lorem</span></h5>
                   <img src="image/blog.jpg" alt="post img" class="pull-left img-responsive thumb margin10 img-thumbnail">
                   <article><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p></article>
-                  <a class="btn btn-blog pull-right marginBottom10" href="blog2.html" id="countButtonblog2">READ MORE</a>
+                  <a class="btn btn-blog pull-right marginBottom10" href="/blog2" id="countButtonblog2">READ MORE</a>
                   <script type="text/javascript">
                   var countblog2 = 0;
                   var buttonblog2 = document.getElementById("countButtonblog2");

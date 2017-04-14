@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Team GG</title>
+    <title>{{tittle}}</title>
     <!--Các thủ tục bootstrap-->
     <link rel="stylesheet" href="components/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" href="css/styles.css">
@@ -60,20 +60,20 @@
       <div class="collapse navbar-collapse" id="main-nav">
         <div class="container">
           <div class="navbar-header">
-              <a class="navbar-brand" href="index.html"><a href="index.html"><img src="image/logo.png" alt="logo" /></a></a>
+              <a class="navbar-brand" href="/"><a href="/"><img src="image/logo.png" alt="logo" /></a></a>
           </div>
           <ul class="nav navbar-nav">
-           <li class=""><a href="index.html"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+           <li class=""><a href="/"><span class="glyphicon glyphicon-home"></span> Home</a></li>
            <li class="dropdown active">
-            <a href="albums.html" class="dropdown-toggle disabled" data-toggle="dropdown"><span class="glyphicon glyphicon-picture"></span> Albums<span class="caret"></span></a>
+            <a href="/albums" class="dropdown-toggle disabled" data-toggle="dropdown"><span class="glyphicon glyphicon-picture"></span> Albums<span class="caret"></span></a>
             <ul class="dropdown-menu">
-              <li><a href="dogphoto.html">Dog</a></li>
-              <li><a href="catphoto.html">Cat</a></li>
-              <li class="active"><a href="hamsterphoto.html">Hamster</a></li>
+              <li><a href="/dogphoto">Dog</a></li>
+              <li><a href="/catphoto">Cat</a></li>
+              <li class="active"><a href="/hamsterphoto">Hamster</a></li>
             </ul>
           </li>
-           <li class=""><a href="blog.html"><span class="glyphicon glyphicon-list-alt"></span> Blog</a></li>
-           <li class=""><a href="about.html"><span class="glyphicon glyphicon-info-sign"></span> About</a></li>
+           <li class=""><a href="/blog"><span class="glyphicon glyphicon-list-alt"></span> Blog</a></li>
+           <li class=""><a href="/about"><span class="glyphicon glyphicon-info-sign"></span> About</a></li>
           </ul>
           <!--Làm khung search-->
           <form class="navbar-form navbar-left">
@@ -152,8 +152,8 @@
             <!--Mục content albums-->
             <div class="container">
               <div class="page-header">
-                <button><a href="albums.html">Về Trang Album</a></button>
-                <h1>Hamster Photos</h1>
+                <button><a href="/albums">Về Trang Album</a></button>
+                <h1>{{message}}</h1>
               </div>
 
               <div class="row">

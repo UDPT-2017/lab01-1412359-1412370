@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Team GG</title>
+    <title>{{tittle}}</title>
     <!--Các thủ tục bootstrap-->
     <link rel="stylesheet" href="components/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" href="css/styles.css">
@@ -60,20 +60,20 @@
       <div class="collapse navbar-collapse" id="main-nav">
         <div class="container">
           <div class="navbar-header">
-              <a class="navbar-brand" href="index.html"><a href="index.html"><img src="image/logo.png" alt="logo" /></a></a>
+              <a class="navbar-brand" href="/"><a href="index.html"><img src="image/logo.png" alt="logo" /></a></a>
           </div>
           <ul class="nav navbar-nav">
-            <li class="active"><a href="index.html"><span class="glyphicon glyphicon-home"></span> Home</a></li>
-            <li class="dropdown">
-              <a href="albums.html" class="dropdown-toggle disabled" data-toggle="dropdown"><span class="glyphicon glyphicon-picture"></span> Albums<span class="caret"></span></a>
-              <ul class="dropdown-menu">
-                <li><a href="dogphoto.html">Dog</a></li>
-                <li><a href="catphoto.html">Cat</a></li>
-                <li><a href="hamsterphoto.html">Hamster</a></li>
-              </ul>
-            </li>
-            <li class=""><a href="blog.html"><span class="glyphicon glyphicon-list-alt"></span> Blog</a></li>
-            <li class=""><a href="about.html"><span class="glyphicon glyphicon-info-sign"></span> About</a></li>
+           <li class="active"><a href="/"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+           <li class="dropdown">
+            <a href="/albums" class="dropdown-toggle disabled" data-toggle="dropdown"><span class="glyphicon glyphicon-picture"></span> Albums<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="/dogphoto">Dog</a></li>
+              <li><a href="/catphoto">Cat</a></li>
+              <li><a href="/hamsterphoto">Hamster</a></li>
+            </ul>
+          </li>
+          <li class=""><a href="/blog"><span class="glyphicon glyphicon-list-alt"></span> Blog</a></li>
+          <li class=""><a href="/about"><span class="glyphicon glyphicon-info-sign"></span> About</a></li>
           </ul>
           <!--Làm khung search-->
           <form class="navbar-form navbar-left">
@@ -183,12 +183,18 @@
                   <div class="col-sm-1"></div>
                   <div class="col-md-10">
                   <div class="page-header">
-                    <h1>Homepage</h1>
-                    <marquee style="color:#b3ecff; font-size:200%">~Hello Guest~</marquee>
+                    <button onclick="goBack()">Về Trang Blog</button>
+                    <script>
+                      function goBack() {
+                          window.history.back();
+                      }
+                    </script>
+                    <h1>{{message}}</h1>
                   </div>
-                    <h2>Suy ngẫm: <br> Bài Diễn Văn Về Chó Hay Nhất<br></h2>
-
+                    <h2>I Love Food<br></h2>
+                    <img src="image/foodfull.jpg" alt="Cat5" style="width:100%" >
                     <div class="document">
+                      <p>Blog 1 bla bla bla</p>
                       <p>Diễn văn của luật sư George Graham Vest tại phiên tòa xử vụ kiện hàng xóm làm chết con chó của thân chủ, được phóng viên William Safire báo New York Times bình chọn là hay nhất trong các bài diễn văn trên thế giới trong 1000 năm qua.</p>
                       <p>Thưa quý ngài hội thẩm,</p>
                       <p>Người bạn tốt nhất mà con người có được trên thế giới này có thể một ngày nào đó hóa ra kẻ thù chống lại chúng ta. Con cái mà ta nuôi dưỡng với tình yêu thương hết mực rồi cũng có thể sẽ là một lũ vô ơn.</p>
@@ -213,9 +219,6 @@
         <!-- /#page-content-wrapper -->
     </div>
     <!-- /#wrapper -->
-    <audio controls autoplay loop hidden>
-      <source src="music/1.mp3" type="audio/mpeg">
-    </audio>
     <!--Về đầu trang-->
     <a id="back-to-top" href="#" class="btn btn-primary btn-lg back-to-top" role="button" title="Về đầu trang" data-toggle="tooltip" data-placement="left"><span class="glyphicon glyphicon-chevron-up"></span></a>
     <footer>
