@@ -4,7 +4,7 @@
 
 Thành viên:
 * [x] **1412359** Trần Trọng Cao Nguyên (tên tài khoản zec1412359)
-* [x] **1412370** Ngô Nguyễn Trung Nhân (tên tài khoản assilver)
+* [x] **1412370** Ngô Nguyễn Trung Nhân (tên tài khoản 1412370-NNTNhan)
 
 URL: **https://ggteamweb.herokuapp.com**
 
