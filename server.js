@@ -21,15 +21,15 @@ app.set('view engine', 'hbs');
 app.get('/', function (req, res) {
 
   res.render('index', {
-    tittle: 'HBS Index Page',
-    message: 'Hello HBS Page'
+    tittle: 'Homepage',
+    message: 'Homepage'
   });
 });
 
 app.get('/albums', function (req, res) {
 
   res.render('albums', {
-    tittle: 'HBS Albums Page',
+    tittle: 'Albums Page',
     message: 'My Albums'
   });
 });
@@ -37,7 +37,7 @@ app.get('/albums', function (req, res) {
 app.get('/about', function (req, res) {
 
   res.render('about', {
-    tittle: 'HBS About Page',
+    tittle: 'About Page',
     message: 'About GG Team'
   });
 });
@@ -45,7 +45,7 @@ app.get('/about', function (req, res) {
 app.get('/blog', function (req, res) {
 
   res.render('blog', {
-    tittle: 'HBS Blog Page',
+    tittle: 'Blog Page',
     message: 'Blog'
   });
 });
@@ -53,7 +53,7 @@ app.get('/blog', function (req, res) {
 app.get('/blog1', function (req, res) {
 
   res.render('blog1', {
-    tittle: 'HBS Blog1 Page',
+    tittle: 'Blog1 Page',
     message: 'Blog 1'
   });
 });
@@ -61,7 +61,7 @@ app.get('/blog1', function (req, res) {
 app.get('/blog2', function (req, res) {
 
   res.render('blog2', {
-    tittle: 'HBS Blog2 Page',
+    tittle: 'Blog2 Page',
     message: 'Blog 2'
   });
 });
@@ -69,7 +69,7 @@ app.get('/blog2', function (req, res) {
 app.get('/catphoto', function (req, res) {
 
   res.render('catphoto', {
-    tittle: 'HBS Catphoto Page',
+    tittle: 'Catphoto Page',
     message: 'Cat Photos'
   });
 });
@@ -77,7 +77,7 @@ app.get('/catphoto', function (req, res) {
 app.get('/dogphoto', function (req, res) {
 
   res.render('dogphoto', {
-    tittle: 'HBS Dogphoto Page',
+    tittle: 'Dogphoto Page',
     message: 'Dog Photos'
   });
 });
@@ -85,7 +85,7 @@ app.get('/dogphoto', function (req, res) {
 app.get('/hamsterphoto', function (req, res) {
 
   res.render('hamsterphoto', {
-    tittle: 'HBS Hamsterphoto Page',
+    tittle: 'Hamsterphoto Page',
     message: 'Hamster Photos'
   });
 });
