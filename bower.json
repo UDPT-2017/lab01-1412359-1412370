@@ -1,7 +1,7 @@
 {
   "name": "ggweb",
   "description": "This is ggweb demo",
-  "main": "index.js",
+  "main": "server.js",
   "authors": [
     "Cao Nguyen"
   ],
