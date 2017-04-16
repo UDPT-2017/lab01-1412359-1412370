@@ -1,5 +1,5 @@
-process.env.PWD = process.cwd();
-app.use(express.static(process.env.PWD, 'public'));
+//process.env.PWD = process.cwd();
+//app.use(express.static(process.env.PWD, 'public'));
 
 var express = require('express');
 var app = express();
