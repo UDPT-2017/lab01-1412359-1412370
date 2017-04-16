@@ -6,7 +6,7 @@ Thành viên:
 * [x] **1412359** Trần Trọng Cao Nguyên (tên tài khoản zec1412359)
 * [x] **1412370** Ngô Nguyễn Trung Nhân (tên tài khoản assilver)
 
-URL: **URL hosting của bài tập**
+URL: **https://ggteamweb.herokuapp.com**
 
 ## Yêu cầu
 
