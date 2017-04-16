@@ -1,9 +1,16 @@
+process.env.PWD = process.cwd();
+app.use(express.static(process.env.PWD, 'public'));
+
 var express = require('express');
 var app = express();
 var exphbs = require('express-handlebars');
 
 app.use(express.static('public'));
 app.use('/components', express.static('bower_components'));
+
+//process.env.PWD = process.cwd();
+//app.set('views', path.join(process.env.PWD, 'public'));
+//app.use(express.static(path.join(process.env.PWD, 'public')));
 
 app.engine('hbs', exphbs({
   extname: '.hbs'
