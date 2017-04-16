@@ -84,7 +84,7 @@ app.get('/hamsterphoto', function (req, res) {
 });
 
 // start server
-var port=3000;
+var port = process.env.PORT || 8000;
 app.listen(port, function () {
   console.log(`Example app listening on port ${port}!`);
 });
